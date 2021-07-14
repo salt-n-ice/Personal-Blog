@@ -1,0 +1,171 @@
+body {
+  position: relative;
+
+  padding-bottom: 80px; /* same as footer height */
+  font-family: Arial;
+  background-image: url("https://images.wallpaperscraft.com/image/lane_night_dark_139408_1920x1080.jpg");
+  /* background-size: cover; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+p {
+  margin-bottom: 3px;
+}
+
+.right{
+  float : right;
+display : inline-block;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #c70039;
+  opacity: 0.7;
+}
+.blogs{
+  padding: 40px;
+}
+.text-center{
+  padding: 0 40px;
+}
+
+.add-button{
+  padding-top: 20px;
+  padding-left: 40px;
+  opacity: 0.7;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 65%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: 	#cc0000;
+  opacity: .8;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+h1, h2, h3, h5, p{
+  color: white;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.direct:hover{
+  cursor: pointer;
+}
+
+.title, .content, .descr{
+  /* overflow-wrap: break-word; */
+}
+.etitle, .econtent, .edescr{
+  /* overflow-wrap: break-word; */
+}
+
+
+.editor{
+  width: 80%;
+  background-color: #cc0000;
+  margin: 20px auto 0 auto;
+  min-height: 500px;
+  position: relative;
+  opacity: 0.8;
+}
+.editor-common{
+  padding: 20px;
+}
+.post-button, .edit-post-button{
+  text-align: center;
+}
+
+.sep-blog{
+  width: 100%;
+  min-height: 500px;
+  background-color: 	#cc0000;
+  margin: 100px auto 50px auto;
+  padding: 40px 40px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.edit-btn{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.delete-btn{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.delete
+
+.curr-title{
+  overflow-wrap: break-word;
+}
+.curr-descr{
+  padding: 0px 0px 70px 0px;
+  width: 85%;
+  overflow-wrap: break-word;
+}
+.curr-content{
+  overflow-wrap: break-word;
+}
+
+.pop-blog{
+  background-color: #CD5C5C;
+  font-size: 1.2rem;
+  min-height: 60px;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+/* Footer */
+.fab:hover{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer {
+  padding-top: 20px;
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:80px;   /* Height of the footer */
+  text-align: center;
+  background: #c70039;
+  opacity: 0.5;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
